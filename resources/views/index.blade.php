@@ -1,5 +1,18 @@
 @extends('layouts.app')
 
+@section('header')
+  <div class="flex items-center justify-between py-2">
+    <div class="font-bold">
+      <span>Главная</span>
+      <a class="text-indigo-400 font-bold hover:underline" href="#">[назад]</a>
+    </div>
+    <a class="create-btn bg-green-500 text-white font-semibold py-1 px-2 hover:bg-green-600 rounded text-sm" href="#">
+      <span class="block sm:hidden">＋</span>
+      <span class="hidden sm:block">Создать</span>
+    </a>
+  </div>
+@endsection
+
 @section('content')
   {{-- <div class="mt-6 bg-white rounded shadow overflow-hidden">
     <div class="bg-gray-50 px-2 sm:px-4 py-3 border-b border-gray-200 text-xs font-medium text-gray-500 uppercase tracking-wider">Название формы</div>
@@ -248,4 +261,22 @@
       </div>
     </div>
   </div>
+@endsection
+
+@section('scripts')
+  <script>
+    let createBtn = document.querySelector('.create-btn');
+    let closeBtn = document.querySelector('.modal-close');
+    let overlay = document.querySelector('.modal-overlay');
+    let modal = document.querySelector('.modal');
+    let toggleModal = function(e) {
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+
+      e.preventDefault();
+    }
+    createBtn.addEventListener('click', toggleModal);
+    closeBtn.addEventListener('click', toggleModal);
+    overlay.addEventListener('click', toggleModal);
+  </script>
 @endsection

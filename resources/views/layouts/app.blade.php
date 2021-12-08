@@ -13,9 +13,21 @@
       <div class="flex justify-between items-center py-2">
         <div class="flex items-center gap-2">
           <div class="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-indigo-300 to-purple-400">
-            <span class="text-white font-bold select-none">DV</span>
+            <span class="text-white font-bold select-none">
+              @auth
+                DV
+              @endauth
+
+              @guest
+                A
+              @endguest
+            </span>
           </div>
-          <span class="hidden sm:block font-semibold">Dmitry Vinogradov</span>
+          <span class="hidden sm:block font-semibold">
+            @auth
+              Dmitry Vinogradov  
+            @endauth
+          </span>
         </div>
         <div class="burger-menu">
           <span></span>
@@ -24,9 +36,16 @@
 
       <nav class="menu py-2">
         <ul class="flex flex-col gap-1">
-          <li><a class="block px-3 py-2 rounded-md font-medium hover:bg-gray-100" href="#">Main</a></li>
-          <li><a class="block px-3 py-2 rounded-md font-medium hover:bg-gray-100" href="#">About</a></li>
-          <li><a class="block px-3 py-2 rounded-md font-medium hover:bg-gray-100" href="#">Some more</a></li>
+          @auth
+            <li><a class="block px-3 py-2 rounded-md font-medium hover:bg-gray-100" href="#">Main</a></li>
+            <li><a class="block px-3 py-2 rounded-md font-medium hover:bg-gray-100" href="#">About</a></li>
+            <li><a class="block px-3 py-2 rounded-md font-medium hover:bg-gray-100" href="#">Some more</a></li>
+          @endauth
+
+          @guest
+            <li><a class="block px-3 py-2 rounded-md font-medium hover:bg-gray-100 @if(Route::is('login')) underline @endif" href="{{ route('login') }}">Авторизация</a></li>
+            <li><a class="block px-3 py-2 rounded-md font-medium hover:bg-gray-100 @if(Route::is('register')) underline @endif" href="{{ route('register') }}">Регистрация</a></li>
+          @endguest
         </ul>
       </nav>
     </div>
@@ -34,16 +53,7 @@
 
   <section class="bg-white shadow">
     <div class="max-w-screen-lg mx-auto px-2 sm:px-4">
-      <div class="flex items-center justify-between py-2">
-        <div class="font-bold">
-          <span>Главная</span>
-          <a class="text-indigo-400 font-bold hover:underline" href="#">[назад]</a>
-        </div>
-        <a class="create-btn bg-green-500 text-white font-semibold py-1 px-2 hover:bg-green-600 rounded text-sm" href="#">
-          <span class="block sm:hidden">＋</span>
-          <span class="hidden sm:block">Создать</span>
-        </a>
-      </div>
+      @yield('header')
     </div>
   </section>
 
