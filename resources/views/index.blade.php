@@ -152,7 +152,6 @@
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Action
-                  <span class="sr-only">Action</span>
                 </th>
               </tr>
             </thead>
@@ -173,7 +172,114 @@
                   Developer
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap flex gap-2">
-                  {{-- <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a> --}}
+                  <a class="bg-yellow-500 text-white font-semibold py-1 px-2 hover:bg-yellow-600 rounded text-xs" href="#">
+                    Редактировать
+                  </a>
+                  <a class="bg-blue-500 text-white font-semibold py-1 px-2 hover:bg-blue-600 rounded text-xs" href="#">
+                    Посмотреть
+                  </a>
+                  <button class="bg-red-500 text-white font-semibold py-1 px-2 hover:bg-red-600 rounded text-xs">
+                    Удалить
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm font-medium text-gray-900">Dmitry Vinogradov</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">Best employee</div>  
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    Active
+                  </span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Developer
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap flex gap-2">
+                  <a class="bg-yellow-500 text-white font-semibold py-1 px-2 hover:bg-yellow-600 rounded text-xs" href="#">
+                    Редактировать
+                  </a>
+                  <a class="bg-blue-500 text-white font-semibold py-1 px-2 hover:bg-blue-600 rounded text-xs" href="#">
+                    Посмотреть
+                  </a>
+                  <button class="bg-red-500 text-white font-semibold py-1 px-2 hover:bg-red-600 rounded text-xs">
+                    Удалить
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm font-medium text-gray-900">Dmitry Vinogradov</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">Best employee</div>  
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    Active
+                  </span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Developer
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap flex gap-2">
+                  <a class="bg-yellow-500 text-white font-semibold py-1 px-2 hover:bg-yellow-600 rounded text-xs" href="#">
+                    Редактировать
+                  </a>
+                  <a class="bg-blue-500 text-white font-semibold py-1 px-2 hover:bg-blue-600 rounded text-xs" href="#">
+                    Посмотреть
+                  </a>
+                  <button class="bg-red-500 text-white font-semibold py-1 px-2 hover:bg-red-600 rounded text-xs">
+                    Удалить
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm font-medium text-gray-900">Dmitry Vinogradov</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">Best employee</div>  
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    Active
+                  </span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Developer
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap flex gap-2">
+                  <a class="bg-yellow-500 text-white font-semibold py-1 px-2 hover:bg-yellow-600 rounded text-xs" href="#">
+                    Редактировать
+                  </a>
+                  <a class="bg-blue-500 text-white font-semibold py-1 px-2 hover:bg-blue-600 rounded text-xs" href="#">
+                    Посмотреть
+                  </a>
+                  <button class="bg-red-500 text-white font-semibold py-1 px-2 hover:bg-red-600 rounded text-xs">
+                    Удалить
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm font-medium text-gray-900">Dmitry Vinogradov</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">Best employee</div>  
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    Active
+                  </span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Developer
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap flex gap-2">
                   <a class="bg-yellow-500 text-white font-semibold py-1 px-2 hover:bg-yellow-600 rounded text-xs" href="#">
                     Редактировать
                   </a>
@@ -306,9 +412,12 @@
     let closeBtn = document.querySelector('.modal-close');
     let overlay = document.querySelector('.modal-overlay');
     let modal = document.querySelector('.modal');
+    let body = document.querySelector('body');
     let toggleModal = function(e) {
       modal.classList.toggle('hidden');
       modal.classList.toggle('flex');
+
+      body.classList.toggle('overflow-hidden')
 
       e.preventDefault();
     }

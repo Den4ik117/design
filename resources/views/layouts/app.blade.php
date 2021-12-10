@@ -58,7 +58,7 @@
   </section>
 
   <main>
-    <div class="max-w-screen-lg mx-auto px-4">
+    <div class="max-w-screen-lg mx-auto px-4 pb-4">
 
       @if (session()->has('success'))
         <div class="flex mt-6 w-full overflow-hidden bg-white rounded-lg shadow">
