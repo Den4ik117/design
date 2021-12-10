@@ -14,6 +14,33 @@
 @endsection
 
 @section('content')
+  <div class="mt-6">
+      {{-- <div class="mt-5 md:mt-0"> --}}
+        <form action="#" method="POST">
+          <div class="shadow overflow-hidden sm:rounded-md">
+            <div class="px-4 py-5 bg-white sm:p-6">
+              <div class="grid sm:grid-cols-2 gap-4 text-center">
+                
+                <a class="block bg-green-500 text-white font-semibold py-1 px-2 hover:bg-green-600 rounded text-sm" href="{{ route('login') }}">
+                  Авторизоваться
+                </a>
+                <a class="block bg-green-500 text-white font-semibold py-1 px-2 hover:bg-green-600 rounded text-sm" href="{{ route('login') }}">
+                  Авторизоваться
+                </a>
+                <a class="block bg-green-500 text-white font-semibold py-1 px-2 hover:bg-green-600 rounded text-sm" href="{{ route('login') }}">
+                  Авторизоваться
+                </a>
+                <a class="block bg-green-500 text-white font-semibold py-1 px-2 hover:bg-green-600 rounded text-sm" href="{{ route('login') }}">
+                  Авторизоваться
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </form>
+      {{-- </div> --}}
+  </div>
+
   {{-- <div class="mt-6 bg-white rounded shadow overflow-hidden">
     <div class="bg-gray-50 px-2 sm:px-4 py-3 border-b border-gray-200 text-xs font-medium text-gray-500 uppercase tracking-wider">Название формы</div>
     <div class="px-2 sm:px-4 pt-2">
@@ -123,8 +150,9 @@
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Role
                 </th>
-                <th scope="col" class="relative px-6 py-3">
-                  <span class="sr-only">Edit</span>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Action
+                  <span class="sr-only">Action</span>
                 </th>
               </tr>
             </thead>
@@ -144,8 +172,17 @@
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   Developer
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                <td class="px-6 py-4 whitespace-nowrap flex gap-2">
+                  {{-- <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a> --}}
+                  <a class="bg-yellow-500 text-white font-semibold py-1 px-2 hover:bg-yellow-600 rounded text-xs" href="#">
+                    Редактировать
+                  </a>
+                  <a class="bg-blue-500 text-white font-semibold py-1 px-2 hover:bg-blue-600 rounded text-xs" href="#">
+                    Посмотреть
+                  </a>
+                  <button class="bg-red-500 text-white font-semibold py-1 px-2 hover:bg-red-600 rounded text-xs">
+                    Удалить
+                  </button>
                 </td>
               </tr>
             </tbody>
